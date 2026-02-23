@@ -1,0 +1,24 @@
+# Jumping Game – Java 2D Platformer
+
+A fast-paced 2D jumping game built in Java using Swing. Features smooth player movement, jump mechanics, collision detection, state-based animations, and score tracking. Demonstrates OOP principles, game loop logic, and event-driven programming.
+
+---
+
+## Key Features
+
+- Player movement: Run, Jump, Roll
+- Collision detection with obstacles
+- Game state management (running, jumping, rolling)
+- Score tracking system
+- Smooth animations and responsive controls
+
+---
+
+## Technologies Used
+
+- Java
+- Swing
+- Object-Oriented Programming (OOP)
+- Event-driven programming
+
+---
