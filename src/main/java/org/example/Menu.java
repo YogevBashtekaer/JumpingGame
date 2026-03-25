@@ -7,13 +7,24 @@ public class Menu extends JPanel {
     private JButton startGameButton;
     private JButton controlButton;
     private Window parentWindow;
+    private Image title;
+    private Image coolPhoto1;
+    private Image coolPhoto2;
 
+
+    private static final String TITLE_IMAGE_PATH = "/Photos/title.png";
+    private static final String COOL_PHOTO_1_IMAGE_PATH = "/Photos/cool_photo_1.png";
+    private static final String COOL_PHOTO_2_IMAGE_PATH = "/Photos/cool_photo_2.png";
     public Menu(Window parentWindow){
         this.parentWindow = parentWindow;
 
         this.setBackground(Color.black);
         this.setLayout(null);
         this.setPreferredSize(new Dimension(Utils.WINDOW_WIDTH, Utils.WINDOW_HEIGHT));
+
+        this.title = new ImageIcon(getClass().getResource(TITLE_IMAGE_PATH)).getImage();
+        this.coolPhoto1 = new ImageIcon(getClass().getResource(COOL_PHOTO_1_IMAGE_PATH)).getImage();
+        this.coolPhoto2 = new ImageIcon(getClass().getResource(COOL_PHOTO_2_IMAGE_PATH)).getImage();
 
         this.startGameButton = new JButton("start game");
         this.startGameButton.setBounds(Utils.WINDOW_WIDTH/2-50,100,100,25);
@@ -47,5 +58,14 @@ public class Menu extends JPanel {
 
         rulesDialog.add(panel);
         rulesDialog.setVisible(true);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        g.drawImage(title, 10 ,10, null);
+        g.drawImage(coolPhoto1, 20 ,180, null);
+        g.drawImage(coolPhoto2, 450 ,80, null);
     }
 }

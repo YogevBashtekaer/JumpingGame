@@ -157,8 +157,8 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
                 handlePlayerHit(attack);
                 attacksToRemove.add(attack);
                 if (elapsedTime > highScore) {
-                    highScore = elapsedTime; // עדכון הציון הגבוה אם השחקן שבר את השיא
-                    saveHighScore(); // שמירת הציון הגבוה בקובץ
+                    highScore = elapsedTime;
+                    saveHighScore();
                 }
                 this.music.loadMusic(Utils.END_MUSIC);
                 this.music.play();

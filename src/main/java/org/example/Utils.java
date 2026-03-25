@@ -11,6 +11,8 @@ public class Utils {
     final static String END_MUSIC = "src/main/java/Music/end_music.wav";
     final static String HIT_BY_ICEBALL_MUSIC = "src/main/java/Music/hit_by_iceball.wav";
     final static String HIT_BY_FIREBALL_MUSIC = "src/main/java/Music/hit_by_fireball.wav";
+
+
     public static void sleep(int millis){
         try {
             Thread.sleep(millis);
